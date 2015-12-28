@@ -1,0 +1,5 @@
+ext.goodChild = false
+
+task breakingTheLaw{
+	 println "I'm breaking the law"
+}

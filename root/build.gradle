@@ -1,0 +1,25 @@
+allprojects {
+    task hello << { task -> println "I'm $task.project.name" }
+}
+
+subprojects {
+    hello << {println "- My parent is root"}
+}
+
+project(':childOne').hello << {
+    println "- I'm adding an additional behaviour"
+}
+
+configure(subprojects.findAll {it.name != 'childThree'}) {
+    hello << {println "- I'm an additional behaviour to other guys than childThree"}
+}
+
+subprojects {
+    hello {
+        afterEvaluate { Project project ->
+            if (project.goodChild) { doLast {
+                println '- I am a good child.' }
+            }
+        }
+    }
+}

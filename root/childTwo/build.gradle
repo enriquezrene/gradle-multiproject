@@ -1,0 +1,6 @@
+ext.goodChild = true
+
+hello.doLast {
+  println "- My additional behaviour is defined inside the childTwo/build.gradle file"
+}
+
