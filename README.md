@@ -15,7 +15,7 @@ ext.additionalPropertyName = propertyValue
 </pre>
 
 You can execute the child's tasks, for example:
-- childThree subproject has the task breakingTheLaw, inside the root project you can type:
+childThree subproject has the task breakingTheLaw, inside the root project you can type:
 <pre>
 $ gradle breakingTheLaw
 </pre>
@@ -23,9 +23,7 @@ output:
 <pre>
 I'm breaking the law
 :childThree:breakingTheLaw UP-TO-DATE
-
 BUILD SUCCESSFUL
-
 Total time: 1.117 secs
 </pre>
 If you want to run just a project's task from the root you can use the absolute path:
