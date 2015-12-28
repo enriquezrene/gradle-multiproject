@@ -5,10 +5,10 @@ An multiproject example using gradle as build tool
 childOne has not build.gradle file beacuse in Gradle build scripts are optional
 
 The setting.gradle file contains the subprojects names
-
-<em>allprojects:</em> property to get a list with the current project and all its subprojects underneath it
-<em>subprojects:</em> provides a property to get the subprojects only.
-
+<ul>
+<li>allprojects:</li> property to get a list with the current project and all its subprojects underneath it
+<li>subprojects:</li> provides a property to get the subprojects only.
+<ul>
 A project can get more than defined properties (project properties defined in maven), if you want define an additional property use this sintax in the build.gradle file:
 <pre>
 ext.additionalPropertyName = propertyValue
