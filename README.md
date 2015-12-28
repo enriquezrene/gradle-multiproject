@@ -17,14 +17,14 @@ You can execute the child's tasks, for example:
 $ gradle breakingTheLaw
 
 output:
-
+<pre>
 I'm breaking the law
 :childThree:breakingTheLaw UP-TO-DATE
 
 BUILD SUCCESSFUL
 
 Total time: 1.117 secs
-
+</pre>
 If you want to run just a project's task from the root you can use the absolute path:
 
 $ gradle :childOne:hello
